@@ -45,11 +45,9 @@ const HotelInfo = () => {
               your stay comfortable, and your experience one-of-a-kind.
             </p>
             <ul>
-              {
-                servicesData.map((service) => 
-                  <li>{service.service}</li>
-                )
-              }
+              {servicesData.map((amenity) => (
+                <li>{amenity.name}</li>
+              ))}
             </ul>
           </section>
           <section className="checklist" id="accessibility">
@@ -60,11 +58,9 @@ const HotelInfo = () => {
               special needs:
             </p>
             <ul>
-              {
-                accessibilityData.map((item) => 
-                  <li>{item.item}</li>
-                )
-              }
+              {accessibilityData.map((accessibilty) => (
+                <li>{accessibilty.name}</li>
+              ))}
             </ul>
           </section>
         </article>

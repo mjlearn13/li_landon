@@ -8,7 +8,7 @@ const Welcome = () => {
           <div className="gallery">
             {
               galleryImagesData.map((image) => 
-                <img src={image.src} alt={image.alt} className={image.class}/>
+                <img src={image.src} alt={image.alt} className={image.className}/>
               )
             }
           </div>
