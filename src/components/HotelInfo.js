@@ -1,6 +1,6 @@
 import React from "react";
 import servicesData from './data/services.json'
-import accessibilityData from './data/accessibility.json'
+import accessibilityData from './data/accessibilities.json'
 
 const HotelInfo = () => {
     return (
