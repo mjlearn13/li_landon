@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { nanoid } from "nanoid";
 // import servicesData from './data/services.json'
 // import accessibilityData from './data/accessibilities.json'
 
@@ -71,7 +72,7 @@ const HotelInfo = () => {
             </p>
             <ul>
               {servicesData.map((amenity) => (
-                <li>{amenity.name}</li>
+                <li key={nanoid()}>{amenity.name}</li>
               ))}
             </ul>
           </section>
@@ -84,7 +85,7 @@ const HotelInfo = () => {
             </p>
             <ul>
               {accessibilityData.map((accessibilty) => (
-                <li>{accessibilty.name}</li>
+                <li key={nanoid()}>{accessibilty.name}</li>
               ))}
             </ul>
           </section>

@@ -7,7 +7,7 @@ import Main from './components/Main'
 class App extends React.Component {
   render() {
     return (
-      <div classNameName='App'> 
+      <div className='App'> 
         <Header />
         <Main />
         <Footer />

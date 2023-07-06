@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { nanoid } from "nanoid";
 //import menuLinksData from './data/menu_links.json'
 
 const Header = () => {
@@ -42,19 +43,18 @@ const Header = () => {
             </a>
           </div>
           <ul>
-            {menuLinksData.map((link) => 
-              <li>
+            {menuLinksData.map((link) => (
+              <li key={nanoid()}>
                 <a className={`icon ${link.class}`} href={link.href}>
                   <span>{link.text}</span>
                 </a>
               </li>
-              )
-            }
+            ))}
           </ul>
         </div>
       </nav>
     </header>
-    )
+  )
 }
 
 export default Header;

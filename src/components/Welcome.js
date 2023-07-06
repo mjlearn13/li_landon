@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { nanoid } from "nanoid";
 // import galleryImagesData from './data/gallery_images.json'
 
 const Welcome = () => {
@@ -22,7 +23,7 @@ const Welcome = () => {
         <div className="gallery">
           {
             galleryImagesData.map((image) => 
-              <img src={image.src} alt={image.alt} className={image.className}/>
+              <img key={nanoid()} src={image.src} alt={image.alt} className={image.className}/>
             )
           }
         </div>
